@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- saved from url=(0012)about:srcdoc -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="">--><base href=".">
+  <style class="fcc-hide-header">
+    head *, title, meta, link, script {
+      display: none !important;
+    }
+  </style>
+  <script>
+    window.__frameId = 'fcc-main-frame';
+    window.onerror = function(msg) {
+      const string = msg.toLowerCase();
+      if (string.includes('script error')) {
+        msg = 'Build error, open your browser console to learn more.';
+      }
+      console.log(msg);
+      return true;
+    };
+    document.addEventListener('click', function(e) {
+      let element = e.target;
+      while(element && element.nodeName !== 'A') {
+        element = element.parentElement;
+      }
+      if (element && element.nodeName === 'A' && new URL(element.href).hash === '') {
+        e.preventDefault();
+        window.parent.window.alert(
+          i18nContent.t('misc.iframe-alert', { externalLink: element.href })
+        )
+      }
+      if (element) {
+        const href = element.getAttribute('href');
+        if (!href || href[0] !== '#' && !href.match(/^https?:\/\//)) {
+          e.preventDefault();
+        }
+        else if (href.match(/^#.+/)) {
+          e.preventDefault();
+          const scrollId = href.substring(1);
+          window.location.hash = scrollId;
+        }
+      }
+    }, false);
+    document.addEventListener('submit', function(e) {
+      const action = e.target.getAttribute('action');
+      e.preventDefault();
+      if (action && action.match(/https?:\/\//)) {
+        window.parent.window.alert(
+          i18nContent.t('misc.iframe-form-submit-alert', { externalLink: action  })
+        )
+      }
+    }, false);
+  </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" data-href="styles.css"><title>Work With Us Documentation</title><style class="fcc-injected-styles">#logo{
+  width: 50px;
+  height: 50px;
+  aspect-ratio: 1 / 1;
+  display: block;
+  position: fixed;
+  top: 0;
+}
+#sidenav{
+  display: flex;
+  width: 250px;
+  height: 100%;
+  background-color: #ede3a4;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  align-items: center;
+  padding-top: 60px;
+}
+#navbar{
+  margin: auto;
+}
+#description{
+  font-size: 25px;
+  font-family: Fantasy;
+}
+#sidenav ul{
+  display: block;
+  padding-inline-start: 0;
+  height: 100%;
+}
+#sidenav li{
+  display: block;
+  color: #000000;
+  
+}
+#sidenav a:hover{
+  color: #a5a9cf;
+  cursor: pointer; 
+}
+#sidenav a{
+  color:inherit;
+  text-decoration: none;
+  font-family: Fantasy;
+  display: block;
+  font-size: 20px;
+}
+#body{
+  margin-left: 250px;
+  
+}
+@media screen and (max-height: 450px) {
+  #sidenav {
+    padding-top: 15px;
+  }
+  #sidenav a {
+    font-size: 18px;
+  }
+}
+.heading{
+  font-size: 30px;
+  font-family: Fantasy;
+}
+p{
+  font-size: 20px;
+  font-family: Fantasy ;
+}</style></head>
+    
+    
+    
+    
+  
+  <body><main id="main-doc">
+    <div id="sidenav">
+      <img id="logo" src="https://i.ibb.co/XZzwzwt/IMG-0220-removebg-preview.png" alt="Work WIth Us">
+      <nav id="navbar">
+        <header id="description">Game Documantation</header>
+        <ul>
+          <li><a class="nav-link" href="https://www.freecodecamp.org/learn/responsive-web-design-v9/lab-technical-documentation-page/build-a-technical-documentation-page#introduction">Introduction</a></li>
+          <li><a class="nav-link" href="https://www.freecodecamp.org/learn/responsive-web-design-v9/lab-technical-documentation-page/build-a-technical-documentation-page#how_it_works">How it works</a></li>
+          <li><a class="nav-link" href="https://www.freecodecamp.org/learn/responsive-web-design-v9/lab-technical-documentation-page/build-a-technical-documentation-page#character">Character</a></li>
+          <li><a class="nav-link" href="https://www.freecodecamp.org/learn/responsive-web-design-v9/lab-technical-documentation-page/build-a-technical-documentation-page#summun">Summun</a></li>
+          <li><a class="nav-link" href="https://www.freecodecamp.org/learn/responsive-web-design-v9/lab-technical-documentation-page/build-a-technical-documentation-page#other">Other</a></li>
+          <li><a class="nav-link" href="https://www.freecodecamp.org/learn/responsive-web-design-v9/lab-technical-documentation-page/build-a-technical-documentation-page#for_fcc">For FCC</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="body"> 
+      <section class="main-section" id="introduction">
+        <header class="heading">Introduction</header>
+        <p class="content">Work With Us helps you find motivation and happinies on your work!</p>
+        <p class="content">Set up your goals and get start!</p>
+      </section>
+      <section class="main-section" id="how_it_works">
+        <header class="heading">How it Works</header>
+        <p class="content">The core of Work With Us is companionship. Set a timer to work with fellows in the villige. You will get rewards according to the time you work. Don't forget a moderate rest is also important!</p>
+      </section>
+      <section class="main-section" id="character">
+        <header class="heading">Character</header>
+        <p class="content">There are animals in various professionals working in the villige, come and be a part of them!</p>
+      </section>
+      <section class="main-section" id="summun">
+        <header class="heading">Summun</header>
+        <p class="content">After getting salary from your work, you can summun animals to the villige.</p>
+      </section>
+      <section class="main-section" id="other">
+        <header class="heading">Other</header>
+        <p class="content">After midnignt,(12 a.m.) animals working in daytimes will not be working, while animals working at night will continue working. For example, animals working as a pilot will still be working.</p>
+      </section>
+      <section class="main-section" id="for_fcc">
+        <header class="heading">For FCC</header>
+        <ul>
+          <li>
+            <p><code>static</code> is the default positioning for all elements.</p>
+          </li>
+          <li>
+            <p><code>relative</code> the element is still positioned according to the normal flow of the document, but the top, left, bottom, and right values become active.
+</p>
+          </li>
+          <li>
+            <p><code>static</code> is the default positioning for all elements.</p>
+          </li>
+          <li>
+            <p><code>static</code> is the default positioning for all elements.</p>
+          </li>
+          <li>
+            <p><code>static</code> is the default positioning for all elements.</p>
+          </li>
+        </ul>  
+      </section>
+    </div>
+  </main>
+
+</body></html>
